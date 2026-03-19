@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+}
+
+/* Force pure white background and apply Poppins/Google Sans font stack */
+body {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+  font-family: var(--font-poppins), "Google Sans", "Product Sans", system-ui, -apple-system, sans-serif !important;
+}
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #111827;
+  --font-sans: var(--font-poppins), "Google Sans", "Product Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Global Border Color Reset */
+* {
+  border-color: #f3f4f6;
+}
+
+/* Improve Typography smoothness */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
