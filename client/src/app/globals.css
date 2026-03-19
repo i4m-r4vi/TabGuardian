@@ -5,6 +5,12 @@
   --foreground: #111827;
 }
 
+html {
+  zoom: 0.9;
+  -moz-transform: scale(0.9);
+  -moz-transform-origin: 0 0;
+}
+
 /* Force pure white background and apply Poppins/Google Sans font stack */
 body {
   background-color: #ffffff !important;
