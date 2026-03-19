@@ -32,3 +32,6 @@ server/logs/
 # Uploads
 server/uploads/*
 !server/uploads/.gitkeep
+
+deploy.md 
+plan.md
