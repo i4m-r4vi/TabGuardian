@@ -116,7 +116,7 @@ export default function Dashboard() {
 
   return (
     <div className="space-y-8 bg-white min-h-full">
-      <div className="flex justify-between items-center">
+      <div className="flex md:flex-row flex-col justify-between md:items-center gap-6 md:gap-0">
         <div>
           <h1 className="text-4xl font-black text-gray-900 tracking-tight">
             {user.name.split(' ')[0]}'s Daily Meds
@@ -125,7 +125,7 @@ export default function Dashboard() {
         </div>
         <button 
           onClick={() => setIsAdding(true)}
-          className="bg-blue-600 text-white px-6 py-3.5 rounded-2xl hover:bg-blue-700 transition-all shadow-xl shadow-blue-100 active:scale-95 font-black flex items-center space-x-2"
+          className="bg-blue-600 text-white px-6 py-3.5 w-fit rounded-2xl hover:bg-blue-700 transition-all shadow-xl shadow-blue-100 active:scale-95 font-black flex items-center space-x-2"
         >
           <Plus className="h-5 w-5 stroke-[3]" />
           <span>New Tablet</span>
@@ -183,7 +183,7 @@ export default function Dashboard() {
                       </div>
                     </div>
                   </div>
-                  <div className="flex items-center space-x-4">
+                  <div className="flex items-center space-x-4 justify-end">
                     {status === 'taken' ? (
                       <div className="bg-green-600 text-white px-6 py-2.5 rounded-2xl text-sm font-black flex items-center space-x-2">
                         <CheckCircle className="h-4 w-4 stroke-[3]" />
@@ -204,7 +204,7 @@ export default function Dashboard() {
                     )}
                     <button 
                       onClick={() => handleDeleteTablet(tablet._id)}
-                      className="p-3 text-gray-300 hover:text-red-500 hover:bg-red-50 rounded-xl transition-all opacity-0 group-hover:opacity-100"
+                      className="p-3 text-red-300 hover:text-red-500 hover:bg-red-50 rounded-xl transition-all opacity-50 group-hover:opacity-100"
                     >
                       <Trash2 className="h-5 w-5" />
                     </button>
